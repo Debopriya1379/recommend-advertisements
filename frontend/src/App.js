@@ -17,7 +17,7 @@ function App() {
   const handleFilter = (e)=>{
     const searchText = e.target.value;
     const newFilter = AllAds.filter((value)=>{
-      return value.FoodName.toLowerCase().includes(searchText.toLowerCase());
+      return value.description.toLowerCase().includes(searchText.toLowerCase());
     })
     if(searchText === ""){
       setFilteredAds([]);
